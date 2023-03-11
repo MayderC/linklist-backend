@@ -12,4 +12,5 @@ export interface IEnvironment extends IObjectKeys {
   DB_NAME: string;
   DB_PORT: number;
   DB_HOST: string;
+  DB_STRING: string;
 }

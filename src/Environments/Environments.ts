@@ -10,6 +10,7 @@ const Production: IEnvironment = {
   DB_NAME: "",
   DB_PORT: 0,
   DB_HOST: "",
+  DB_STRING: process.env.DB_STRING || "",
 };
 
 const Development: IEnvironment = {
@@ -22,6 +23,7 @@ const Development: IEnvironment = {
   DB_NAME: process.env.DB_NAME || "",
   DB_PORT: Number(process.env.DB_PORT) || 0,
   DB_HOST: process.env.DB_HOST || "",
+  DB_STRING: process.env.DB_STRING || "",
 };
 
 const Qa: IEnvironment = {
@@ -34,6 +36,7 @@ const Qa: IEnvironment = {
   DB_NAME: "",
   DB_PORT: 0,
   DB_HOST: "",
+  DB_STRING: process.env.DB_STRING || "",
 };
 
 module.exports = {
